@@ -1,0 +1,4 @@
+mixin checkbox(id, label, checked, onClick)
+    label(class="checkbox") #{label}
+        input(type="checkbox" id=id checked=checked onclick=onClick)
+        span(class="checkmark")

@@ -1,0 +1,23 @@
+extends layouts/list.pug
+
+block content
+    h1(id="archiveTitle")
+    #searchBar
+        input(id="archiveSearch" type="text" placeholder="Search...")
+        select(id="includeTags" multiple)
+        select(id="excludeTags" multiple)
+    .linkList
+        .linkListButton(onclick="window.location.href = 'new-record.html';")
+            i(class="fi fi-rr-plus-small")
+        .linkListElement
+            .linkListRow
+                h3(class="linkListHeading") Test
+            .linkListRow
+                img(src="https://t3.ftcdn.net/jpg/01/42/62/84/360_F_142628436_BdXXMV34Xf665lwSRmBbAVICjFXh7vG9.jpg")
+
+
+block footer
+    include layouts/flaticon.pug
+
+block scripts
+    script setupRecordsPage();

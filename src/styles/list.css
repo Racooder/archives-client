@@ -1,0 +1,73 @@
+.linkList {
+    overflow: scroll;
+    padding: 0.6em;
+    width: 22em;
+    height: 70%;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.linkList::-webkit-scrollbar {
+    display: none;
+}
+
+.linkListButton {
+    cursor: pointer;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.linkListButton:hover {
+    text-shadow: 0.06em 0.06em black;
+}
+
+.linkListButton i {
+    font-size: 300%;
+}
+
+.linkListElement {
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    border: 0.1em solid #000;
+}
+
+.linkListElement:hover {
+    box-shadow: 0.1em 0.1em black;
+}
+
+.linkListRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    position: relative;
+}
+
+.linkListRow:not(:last-child) {
+    margin-bottom: 0.7em;
+}
+
+.threeElementRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 33.33%;
+}
+
+.threeElementRowMid {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
+.linkListHeading {
+    margin: 0;
+    font-weight: 200;
+}

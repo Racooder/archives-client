@@ -1,0 +1,20 @@
+html
+    head
+        if site
+            title Archives - #{site}
+        else
+            title Archives
+
+        link(rel='stylesheet' href='https://unpkg.com/slim-select@latest/dist/slimselect.css')
+        link(rel='stylesheet' href='styles/main.css')
+        block layoutStyle
+        block style
+    body
+        block content
+        #footer
+            block footer
+
+    script(src='https://unpkg.com/slim-select@latest/dist/slimselect.min.js')
+    script(src='scripts/main.js')
+    block layoutScripts
+    block scripts

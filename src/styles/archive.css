@@ -1,0 +1,20 @@
+#archiveTitle {
+    margin: 0;
+}
+
+#archiveSettingsHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1em;
+    margin-bottom: 0.5em;
+}
+
+#archiveStatsHolder {
+    width: 16em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    position: relative;
+}

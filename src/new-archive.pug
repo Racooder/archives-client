@@ -1,0 +1,18 @@
+extends layouts/centered.pug
+include layouts/checkbox.pug
+
+block content
+    h1 Create a new archive!
+    form(id="newArchiveForm")
+        input(type="text" id="archiveName" placeholder="Archive Name")
+        +checkbox('isNsfw', 'nsfw')
+        +checkbox('anyoneCanEdit', 'anyone can edit')
+        +checkbox('hasPassword', 'password', false, "togglePasswordInput()")
+        input(type="password" id="archivePassword" placeholder="Password", disabled)
+        button(type="submit" class="formSubmit") Create
+
+block footer
+    include layouts/flaticon.pug
+
+block scripts
+    script setupNewArchivePage();

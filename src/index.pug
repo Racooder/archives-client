@@ -1,2 +1,11 @@
-h1 Archives
-p Some text
+extends layouts/centered.pug
+
+block content
+    h1 Archives
+    p Connect to a server
+    form(id="connectForm")
+        input(type="text" id="connectAddress" placeholder="Server address")
+        button(type="submit") Connect
+
+block scripts
+    script setupIndexPage();

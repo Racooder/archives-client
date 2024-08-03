@@ -1,0 +1,13 @@
+extends layouts/list.pug
+
+block content
+    h1(id="archiveServerTitle")
+    .linkList(id="archiveList")
+        .linkListButton(onclick="window.location.href = 'new-archive.html';")
+            i(class="fi fi-rr-plus-small")
+
+block footer
+    include layouts/flaticon.pug
+
+block scripts
+    script setupArchivesListPage();

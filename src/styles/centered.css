@@ -1,0 +1,46 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0.5em;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em 1em;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+}
+
+button {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: 0.1em solid black;
+}
+
+.separator {
+    width: 8em;
+    border-radius: 0.1em;
+    border: 0.05em solid #111;
+}

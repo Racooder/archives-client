@@ -1,0 +1,24 @@
+extends layouts/centered.pug
+
+block style
+    link(rel='stylesheet' href='styles/archive.css')
+
+block content
+    h1(id="archiveTitle")
+    #archiveSettingsHolder
+    #archiveStatsHolder
+        .archiveStat
+            i(class="fi fi-sr-user")
+                label(id="archiveUserCount")
+        .archiveStat
+            i(class="fi fi-sr-document")
+                label(id="archiveDocumentCount")
+        .archiveStat
+            i(class="fi fi-sr-folder")
+                label(id="archiveRecordCount")
+
+block footer
+    include layouts/flaticon.pug
+
+block scripts
+    script setupArchivePage();

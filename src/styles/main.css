@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css");
+
+/* Size steps */
+
+html {
+    font-family: "Lora", serif;
+    background-color: #fff3de;
+    font-size: 50%;
+}
+
+@media (min-height: 400px) and (min-width: 400px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media (min-height: 800px) and (min-width: 600px) {
+    html {
+        font-size: 150%;
+    }
+}
+
+@media (min-height: 1200px) and (min-width: 800px) {
+    html {
+        font-size: 200%;
+    }
+}
+
+/* Main */
+
+a {
+    transition: 0.2s;
+    color: #0771c7;
+}
+
+a:hover {
+    color: #054e78;
+}
+
+button {
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #bce2ff;
+}
+
+button:hover {
+    background-color: #9dd0ff;
+}
+
+input {
+    background-color: #fff3de;
+}
+
+input:disabled {
+    opacity: 50%;
+}
+
+/* Other */
+
+i > label {
+    position: relative;
+    bottom: 0.1em;
+    margin-left: 0.2em;
+}
+
+/* Checkbox */
+
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 1.5em;
+    cursor: pointer;
+    font-size: 0.9em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.2em;
+    width: 1.2em;
+    background-color: hsl(207, 20%, 54%);
+    border-radius: 0.3em;
+}
+
+.checkbox input:checked ~ .checkmark {
+    background-color: hsl(207, 90%, 54%);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox .checkmark:after {
+    left: 0.428em;
+    top: 0.25em;
+    width: 0.2em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Slim Select */
+
+.ss-main {
+    background-color: #fff3de;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    min-width: 10em;
+}
+
+.ss-content {
+    background-color: #fff3de;
+    border: 0.1em solid black;
+}
+
+.ss-search input {
+    background-color: #fff3de !important;
+}
+
+.ss-search input:focus {
+    box-shadow: 0 0 5px hsl(38, 30%, 50%) !important;
+}
+
+/* Footer */
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    padding: 0.6em 0;
+}
+
+#footer a {
+    text-decoration: none;
+}

@@ -1,0 +1,14 @@
+extends layouts/centered.pug
+
+block content
+    h1 Welcome!
+    form(id="registerForm")
+        input(type="text" id="registerUsername" placeholder="Username")
+        input(type="password" id="registerPassword" placeholder="New Password")
+        input(type="password" id="registerPasswordRepeat" placeholder="Repeat Password")
+        .separator
+        input(type="password" id="registerServerPassword" placeholder="Server Password")
+        button(type="submit") Create Account
+
+block scripts
+    script setupRegisterPage();
